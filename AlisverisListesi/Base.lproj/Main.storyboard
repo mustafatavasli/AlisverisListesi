@@ -48,51 +48,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qpy-Oo-FC6">
-                                <rect key="frame" x="76" y="98" width="240" height="240"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ürün İsmi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KSH-PZ-2vJ">
                                 <rect key="frame" x="71" y="378" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="FvN-5J-vMj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ürün Fiyatı" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A81-T5-N2f">
                                 <rect key="frame" x="71" y="430" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="nrH-jV-iQb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ürün Bedeni" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="igg-J7-Icy">
                                 <rect key="frame" x="71" y="482" width="250" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="QfR-e7-xLu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWy-3y-Mqh">
                                 <rect key="frame" x="158" y="558" width="77" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="McH-rY-JBq"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Kaydet"/>
                                 <connections>
                                     <action selector="kaydetButonu:" destination="sPX-aT-uTz" eventType="touchUpInside" id="3k6-la-eFK"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qpy-Oo-FC6">
+                                <rect key="frame" x="98" y="142.66666666666663" width="200" height="200"/>
+                                <color key="tintColor" systemColor="systemFillColor"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lnn-8s-bHB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="igg-J7-Icy" firstAttribute="centerX" secondItem="JWy-3y-Mqh" secondAttribute="centerX" id="18l-NC-Yb7"/>
-                            <constraint firstItem="KSH-PZ-2vJ" firstAttribute="trailing" secondItem="A81-T5-N2f" secondAttribute="trailing" id="338-bH-d4W"/>
-                            <constraint firstItem="qpy-Oo-FC6" firstAttribute="top" secondItem="oCC-aI-yM1" secondAttribute="topMargin" constant="-5" id="5id-tv-uRC"/>
-                            <constraint firstItem="A81-T5-N2f" firstAttribute="leading" secondItem="igg-J7-Icy" secondAttribute="leading" id="6yy-my-zJJ"/>
-                            <constraint firstItem="KSH-PZ-2vJ" firstAttribute="leading" secondItem="Lnn-8s-bHB" secondAttribute="leading" constant="71" id="9lg-xB-Q4l"/>
-                            <constraint firstItem="qpy-Oo-FC6" firstAttribute="leading" secondItem="Lnn-8s-bHB" secondAttribute="leading" constant="76" id="D3G-AU-Zy8"/>
-                            <constraint firstItem="KSH-PZ-2vJ" firstAttribute="top" secondItem="qpy-Oo-FC6" secondAttribute="bottom" constant="40" id="LWs-Nb-Zc1"/>
-                            <constraint firstItem="igg-J7-Icy" firstAttribute="top" secondItem="A81-T5-N2f" secondAttribute="bottom" constant="18" id="TgM-3m-JC1"/>
-                            <constraint firstItem="Lnn-8s-bHB" firstAttribute="bottom" secondItem="JWy-3y-Mqh" secondAttribute="bottom" constant="225" id="X7e-iy-qdN"/>
-                            <constraint firstItem="JWy-3y-Mqh" firstAttribute="top" secondItem="igg-J7-Icy" secondAttribute="bottom" constant="42" id="cIW-bA-tA3"/>
-                            <constraint firstItem="KSH-PZ-2vJ" firstAttribute="leading" secondItem="A81-T5-N2f" secondAttribute="leading" id="kyw-js-8av"/>
-                            <constraint firstItem="A81-T5-N2f" firstAttribute="trailing" secondItem="igg-J7-Icy" secondAttribute="trailing" id="nqd-lt-mpR"/>
-                            <constraint firstItem="qpy-Oo-FC6" firstAttribute="centerX" secondItem="oCC-aI-yM1" secondAttribute="centerX" id="sWy-E0-BBx"/>
-                            <constraint firstItem="qpy-Oo-FC6" firstAttribute="centerX" secondItem="KSH-PZ-2vJ" secondAttribute="centerX" id="tuN-on-lOr"/>
-                            <constraint firstItem="A81-T5-N2f" firstAttribute="top" secondItem="KSH-PZ-2vJ" secondAttribute="bottom" constant="18" id="vFf-Tr-915"/>
+                            <constraint firstItem="igg-J7-Icy" firstAttribute="top" secondItem="A81-T5-N2f" secondAttribute="bottom" constant="18" id="FrC-pB-fho"/>
+                            <constraint firstItem="KSH-PZ-2vJ" firstAttribute="leading" secondItem="A81-T5-N2f" secondAttribute="leading" id="J04-fk-xaQ"/>
+                            <constraint firstItem="KSH-PZ-2vJ" firstAttribute="leading" secondItem="Lnn-8s-bHB" secondAttribute="leading" constant="71" id="NCD-Yc-acx"/>
+                            <constraint firstItem="A81-T5-N2f" firstAttribute="top" secondItem="KSH-PZ-2vJ" secondAttribute="bottom" constant="18" id="PQq-Xx-JYU"/>
+                            <constraint firstItem="qpy-Oo-FC6" firstAttribute="top" secondItem="Lnn-8s-bHB" secondAttribute="top" constant="37.999999999999972" id="RNq-OT-P4H"/>
+                            <constraint firstItem="qpy-Oo-FC6" firstAttribute="centerX" secondItem="KSH-PZ-2vJ" secondAttribute="centerX" id="Wec-PJ-Tc9"/>
+                            <constraint firstItem="igg-J7-Icy" firstAttribute="centerX" secondItem="JWy-3y-Mqh" secondAttribute="centerX" id="YPw-0O-Bxf"/>
+                            <constraint firstItem="A81-T5-N2f" firstAttribute="trailing" secondItem="igg-J7-Icy" secondAttribute="trailing" id="Yar-xZ-9wK"/>
+                            <constraint firstItem="qpy-Oo-FC6" firstAttribute="leading" secondItem="Lnn-8s-bHB" secondAttribute="leading" constant="98" id="eip-Jh-UHC"/>
+                            <constraint firstItem="KSH-PZ-2vJ" firstAttribute="top" secondItem="qpy-Oo-FC6" secondAttribute="bottom" constant="36.666666666666742" id="fOX-WE-azb"/>
+                            <constraint firstItem="A81-T5-N2f" firstAttribute="leading" secondItem="igg-J7-Icy" secondAttribute="leading" id="fzh-Zm-6Pb"/>
+                            <constraint firstItem="KSH-PZ-2vJ" firstAttribute="centerX" secondItem="oCC-aI-yM1" secondAttribute="centerX" id="s83-gf-peo"/>
+                            <constraint firstItem="JWy-3y-Mqh" firstAttribute="top" secondItem="igg-J7-Icy" secondAttribute="bottom" constant="42" id="w3I-2R-87f"/>
+                            <constraint firstItem="KSH-PZ-2vJ" firstAttribute="trailing" secondItem="A81-T5-N2f" secondAttribute="trailing" id="wn7-ds-9ZE"/>
+                            <constraint firstItem="Lnn-8s-bHB" firstAttribute="bottom" secondItem="JWy-3y-Mqh" secondAttribute="bottom" constant="225" id="z2r-tp-zwW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="coF-vx-hgs"/>
@@ -127,8 +140,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="photo.badge.plus" catalog="system" width="128" height="97"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
